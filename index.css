@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template:
+    "logo" 100px
+    "content" 950px/412px;
+    background-image: url(Imagenes/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BoxLogo {
+    grid-area: logo;
+    margin: 0 0 0 10px;
+}
+
+section{
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.BoxTitle{
+    width: 90%;
+}
+
+.BoxTitle h1{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.BoxText{
+    width: 90%;
+}
+.BoxText p {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    width: 90%;
+    height: 700px;
+    gap: 20px;
+    border-radius: 20px;
+    background: rgb(170,134,186);
+background: linear-gradient(148deg, rgba(170,134,186,1) 0%, rgba(130,57,170,1) 35%);
+}
+
+.BoxInputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+input{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #111729;
+}
+
+select{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #111729;
+}
+
+textarea::placeholder{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #111729;
+}
+
+
+
+textarea{
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.BoxBtn{
+    width: 100%;
+}
+
+button{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4036A9;
+}
+
+@media (min-width: 500px) and (max-width: 1550px){
+    body{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-template:
+        "logo" 100px
+        "content" 950px/1000px;
+        background-image: url(Imagenes/background.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .BoxLogo {
+        grid-area: logo;
+        width: 100%;
+    }
+
+    .BoxLogo img{
+        position: relative;
+        right: 15%;
+    }
+
+    .BoxTitle{
+        width: 70%;
+    }
+
+    .BoxTitle h1{
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 800;
+        font-size: 64px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .BoxText{
+        width: 70%;
+    }
+
+    .BoxText p {
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        width: 70%;
+        height: 500px;
+        gap: 20px;
+        border-radius: 20px;
+        background: rgb(170,134,186);
+background: linear-gradient(148deg, rgba(170,134,186,1) 0%, rgba(130,57,170,1) 35%);
+    }
+
+    .BoxInputs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 45%;
+        gap: 5px;
+    }
+}
