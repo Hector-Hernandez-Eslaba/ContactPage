@@ -12,7 +12,7 @@ body{
     "content" 950px/412px;
     background-image: url(Imagenes/background.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 40% 10%;
 }
 
 .BoxLogo {
@@ -133,7 +133,7 @@ button{
     color: #4036A9;
 }
 
-@media (min-width: 500px) and (max-width: 1550px){
+@media (min-width: 500px) and (max-width: 1280px){
     body{
         display: grid;
         justify-content: center;
@@ -149,15 +149,20 @@ button{
 
     .BoxLogo {
         grid-area: logo;
+        position: relative;
+        top: 5px;
         width: 100%;
     }
 
     .BoxLogo img{
         position: relative;
-        right: 15%;
+        right: 7%;
+        top: 5px;
     }
 
     .BoxTitle{
+        position: relative;
+        bottom: 45px;
         width: 70%;
     }
 
@@ -170,6 +175,8 @@ button{
     }
 
     .BoxText{
+        position: relative;
+        bottom: 55px;
         width: 70%;
     }
 
@@ -188,12 +195,12 @@ button{
         align-items: center;
         flex-wrap: wrap;
         padding: 30px;
-        width: 70%;
+        width: 75%;
         height: 500px;
         gap: 20px;
         border-radius: 20px;
-        background: rgb(170,134,186);
-background: linear-gradient(148deg, rgba(170,134,186,1) 0%, rgba(130,57,170,1) 35%);
+        background: rgb(150,44,138);
+        background: linear-gradient(148deg, rgba(150,44,138,1) 0%, rgba(92,36,172,1) 20%);
     }
 
     .BoxInputs{
